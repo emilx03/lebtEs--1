@@ -7,7 +7,7 @@ window.onload = function(){
 
   var box = document.getElementById("box");
 
-  var t = setInterval(machen, 10);
+  var t = setInterval(machen, 5);
 
   function machen(){
 
@@ -15,8 +15,8 @@ window.onload = function(){
       clearInterval(t);
     }
     else{
-      xWert += 1;
-      lWert += 4;
+      xWert += 0.5;
+      lWert += 2;
       box.style.left = xWert + "px";
       box.style.top = xWert + "px";
       container.style.left = lWert + "px";
